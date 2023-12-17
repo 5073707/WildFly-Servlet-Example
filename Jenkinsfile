@@ -20,7 +20,7 @@ pipeline {
                 cleanWs()
                 
                 // Get some code from a GitHub repository
-                git branch: 'main', url: 'https://github.com/XadmaX/WildFly-Servlet-Example.git'
+                git branch: 'test1', url: 'https://github.com/5073707/WildFly-Servlet-Example.git'
 
                 // Run Maven on a Unix agent.
                 sh "mvn clean package"

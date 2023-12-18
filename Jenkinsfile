@@ -22,7 +22,8 @@ pipeline {
             }
     stage('Deploy') { 
             steps {
-                sudo apt update && sudo apt upgrade -y
+                sudo apt update 
+                sudo apt upgrade -y
                 sudo apt install openjdk-11-jdk -y
                 sudo apt install apache2 -y
 

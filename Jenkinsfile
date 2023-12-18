@@ -27,8 +27,8 @@ pipeline {
                 sudo apt install openjdk-11-jdk -y
                 sudo apt install apache2 -y
 
-                wget https://github.com/wildfly/wildfly/releases/download/30.0.0.Final/wildfly-30.0.0.Final.tar.gz
-                tar xf wildfly-30.0.0.Final.tar.gz
+                wget https://github.com/wildfly/wildfly/releases/download/30.0.0.Final/wildfly-30.0.0.Final.tar.gz 
+                
                 sudo mv wildfly-30.0.0.Final /opt/wildfly
 
                 sudo useradd --system --no-create-home --user-group wildfly
